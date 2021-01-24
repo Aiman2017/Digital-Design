@@ -104,7 +104,7 @@ input:focus {
 }
 
 .form--password {
-  padding: 0.3rem 0.4rem;
+  padding: 0.3rem 0 0.3rem 0.2rem;
   border-radius: 3px;
 }
 
