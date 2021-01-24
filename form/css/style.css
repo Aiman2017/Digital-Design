@@ -1,0 +1,158 @@
+/* fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.eot");
+  src: local("☺"), url("../fonts/Roboto-Regular.woff") format("woff"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype"),
+    url("../fonts/Roboto-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* variable */
+:root {
+  --clr--gainsboro: #e5e5e5;
+  --clr--Nobel: #9c9c9c;
+  --clr--silver: #c4c4c4;
+  --clr--dimgray: #616161;
+  --clr--eclipse: #3a3a3a;
+
+  --clr--grey: #cccccc;
+  --clr--white: #ffffff;
+  --clr--black: #000000;
+}
+
+html,
+body {
+  font-family: "Roboto";
+  font-size: 1rem;
+  color: var(--clr--black);
+  line-height: 16.41px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr--black);
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+}
+
+input:focus {
+  border: 1px solid var(--clr--Nobel);
+}
+
+.form {
+  background-color: var(--clr--Nobel);
+  width: 25rem;
+  padding: 1.25rem;
+  border: 1px solid var(--clr--dimgray);
+}
+
+.form--title {
+  position: relative;
+  padding: 0.625rem 0;
+  margin-bottom: 1.25rem;
+}
+
+.form--title::after {
+  content: "";
+  position: absolute;
+  width: 25rem;
+  background-color: var(--clr--silver);
+  height: 1px;
+  display: block;
+  bottom: -1.25rem;
+  left: -1.25rem;
+}
+
+.form--labels {
+  display: block;
+  padding-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--clr--eclipse);
+}
+
+.form--box {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 3px;
+}
+
+.form--pass {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form--password {
+  padding: 0.3rem 0.4rem;
+  border-radius: 3px;
+}
+
+.form--ages {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.form--ages::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  background-color: var(--clr--silver);
+  height: 1px;
+  display: block;
+  bottom: -1.25rem;
+  left: -1.25rem;
+}
+
+.btns {
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+
+.btns--submit {
+  background-color: var(--clr--dimgray);
+  color: var(--clr--grey);
+}
+
+.btns--submit:hover {
+  background-color: var(--clr--grey);
+  color: var(--clr--dimgray);
+}
+
+.btns--reset {
+  background-color: var(--clr--grey);
+  color: var(--clr--dimgray);
+}
+
+.btns--reset:hover {
+  background-color: var(--clr--dimgray);
+  color: var(--clr--grey);
+}

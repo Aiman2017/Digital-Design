@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form action="#" class="form">
+      <h1 class="form--title">Регистрация</h1>
+
+      <div class="form--mail">
+        <label for="mail" class="form--labels">E-mail</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="example@site.domain"
+          required="required"
+          class="form--box box"
+          autocomplete="off"
+        />
+      </div>
+      <!-- form--mail -->
+
+      <div class="form--pass">
+        <div class="pass__input">
+          <label for="pass" class="form--labels">Пароль</label>
+          <input
+            type="password"
+            id="pass"
+            name="pass"
+            placeholder="password"
+            required="required"
+            class="form--password"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="pass__rewrite">
+          <label for="repass" class="form--labels">Повторите Пароль</label>
+          <input
+            type="password"
+            id="repass"
+            name="pass"
+            placeholder="password"
+            required="required"
+            class="form--password"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+      <!--  form--pass -->
+
+      <div class="form--names">
+        <label for="names" class="form--labels">ФИО</label>
+        <input
+          type="text"
+          class="form--box"
+          name="name"
+          required="required"
+          placeholder="Игорев Игорь Игоревич"
+          id="names"
+          autocomplete="off"
+        />
+      </div>
+      <!-- form--names -->
+
+      <div class="form--ages">
+        <label for="ages" class="form--labels">Возраст</label>
+        <input
+          type="text"
+          class="form--password"
+          name="age"
+          required="required"
+          placeholder="18"
+          id="names"
+          autocomplete="off"
+        />
+      </div>
+      <!-- form--ages -->
+
+      <div class="btns">
+        <button type="submit" class="btn btns--submit">Отправить</button>
+        <button type="reset" class="btn btns--reset">Отмена</button>
+      </div>
+    </form>
+  </body>
+</html>
